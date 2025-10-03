@@ -202,31 +202,27 @@ export default function ResumePage() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <Card className="bg-gradient-to-br from-[#2c7da0]/30 to-[#2c7da0] border-blue-700/50 hover:border-blue-500 transition-all duration-300 transform hover:scale-105">
-              <CardContent className="p-8">
-                <Linkedin className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-                <a
-                  href="https://www.linkedin.com/in/rubiga-s06/"
-                  className="text-white hover:text-blue-300 text-lg font-medium transition-colors"
-                >
-                  rubiga
-                </a>
-              </CardContent>
-            </Card>
+            <a href="https://www.linkedin.com/in/rubiga-s06/" target="_blank" rel="noopener noreferrer">
+              <Card className="cursor-pointer bg-gradient-to-br from-[#2c7da0]/30 to-[#2c7da0] border-blue-700/50 hover:border-blue-500 transition-all duration-300 transform hover:scale-105">
+                <CardContent className="p-8">
+                  <Linkedin className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-white mb-2">LinkedIn</h3>
+                  <p className="text-white hover:text-blue-300 text-lg font-medium transition-colors">rubiga</p>
+                </CardContent>
+              </Card>
+            </a>
 
-            <Card className="bg-gradient-to-br from-[#7a2c7d]/30 to-[#7a2c7d] border-purple-700/50 hover:border-purple-500 transition-all duration-300 transform hover:scale-105">
-              <CardContent className="p-8">
-                <Mail className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-                <a
-                  href="mailto:rubigapriya@gmail.com"
-                  className="text-white hover:text-purple-300 text-lg font-medium transition-colors"
-                >
-                  rubigapriya@gmail.com
-                </a>
-              </CardContent>
-            </Card>
+            <a href="mailto:rubigapriya@gmail.com">
+              <Card className="cursor-pointer bg-gradient-to-br from-[#7a2c7d]/30 to-[#7a2c7d] border-purple-700/50 hover:border-purple-500 transition-all duration-300 transform hover:scale-105">
+                <CardContent className="p-8">
+                  <Mail className="w-12 h-12 text-purple-400 mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
+                  <p className="text-white hover:text-purple-300 text-lg font-medium transition-colors">rubigapriya@gmail.com</p>
+                </CardContent>
+              </Card>
+            </a>
+
+
           </div>
 
           <div className="flex justify-center space-x-6">
@@ -256,7 +252,7 @@ export default function ResumePage() {
                 size="icon"
                 className="text-gray-400 hover:text-white hover:bg-gray-800 rounded-full"
               >
-                <Linkedin className="w-5 h-5" />
+                <a href="https://www.linkedin.com/in/rubiga-s06/" target="_blank"><Linkedin className="w-5 h-5" /></a>
               </Button>
               <Button
                 variant="ghost"
